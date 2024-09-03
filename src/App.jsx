@@ -1,16 +1,15 @@
-import { useState } from 'react'
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
-
-import './App.css'
+import "./App.css";
 
 function App() {
-  
-
   return (
-    <>
-      <h2>Movies </h2>
-    </>
-  )
+    <div className="app-container">
+      <Navbar />
+      <Outlet />
+    </div>
+  );
 }
 
-export default App
+export default App;
